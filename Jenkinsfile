@@ -9,7 +9,7 @@ pipeline{
         }
         stage("Run") {
             steps {
-                sh "docker run -p 8095:80 hello-word-php-apache"
+                sh "docker run -d -rm -p 8085:80 hello-word-php-apache"
             }
         }
         
