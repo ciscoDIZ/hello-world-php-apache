@@ -3,7 +3,7 @@ pipeline{
     stages {
         stage("Clone") {
             steps{
-                sh "git clone github.com/ciscoDIZ/php-pipeline.git "
+                sh "git clone github.com/ciscoDIZ/php-pipeline.git repository"
             }
         }
         stage("Build") {
